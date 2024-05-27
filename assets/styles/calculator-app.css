@@ -27,7 +27,28 @@ body {
 }
 
 #calculator-display {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 45%;
+    padding-right: 1rem;
+}
+
+#calculation-txt {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--color-primary-teal-500);
+    margin: 0;
+}
+
+#result-txt {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 0rem 0 0.5rem 0;
 }
 
 #calculator-body {
