@@ -1,0 +1,70 @@
+
+:root {
+    --color-base-white-100: rgb(255,255,255);
+    --color-base-white-200: rgb(249, 247, 247);
+    --color-base-white-250: rgb(240, 240, 240);
+    --color-base-grey-200: rgba(0, 0, 0, 0.25);
+    --color-base-grey-300: rgba(230, 230, 230, 0.25);
+    --color-primary-teal-300: rgb(188,241,235);
+    --color-primary-teal-350: rgb(168, 230, 223);
+    --color-primary-teal-500: rgb(41,177,163);
+    --color-primary-teal-550: rgb(31, 153, 141);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    background-color: var(--color-base-white-200);
+}
+
+#calculator {
+    width: 20rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-base-white-100);
+    box-shadow: 0rem 0rem 1rem var(--color-base-grey-200);
+}
+
+#calculator-display {
+    height: 45%;
+}
+
+#calculator-body {
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+button {
+    font-family: "Montserrat";
+    font-weight: 450;
+    border-radius: 0;
+    border: 0.05rem solid var(--color-base-grey-300);
+    background-color: var(--color-base-white-200);
+}
+
+button:hover{
+    background-color: var(--color-base-white-250);
+}
+
+.btn-operation {
+    background-color: var(--color-primary-teal-300);
+}
+
+.btn-operation:hover {
+    background-color: var(--color-primary-teal-350);
+}
+
+
+#btn-solve {
+    grid-column: span 2;
+    border: 0.05rem solid var(--color-primary-teal-500);
+    color: var(--color-base-white-100);
+    background-color: var(--color-primary-teal-500);
+}
+
+#btn-solve:hover {
+    background-color: var(--color-primary-teal-550);
+}
